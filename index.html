@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pokédex</title>
+</head>
+
+<body>
+
+    <h1>Consulta tu Pokémon</h1>
+
+    <form id="pokemonForm">
+
+        <label for="numero">
+            Número de Pokédex:
+        </label>
+
+        <input
+            type="number"
+            id="numero"
+            min="1"
+            placeholder="Ejemplo: 25"
+            required
+        >
+
+        <button type="submit">
+            Consultar
+        </button>
+
+        <br><br>
+
+        <label for="nombre">
+            Nombre del Pokémon:
+        </label>
+
+        <input
+            type="text"
+            id="nombre"
+            readonly
+        >
+
+    </form>
+
+    <p id="mensaje"></p>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
